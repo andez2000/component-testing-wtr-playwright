@@ -5,22 +5,20 @@ const outDir = process.env.OUTDIR || '.';
 
 export default {
     browserLogs: true,
+    nodeResolve: true,
     reporters: [
         defaultReporter(),
         summaryReporter(),
-        junitReporter({
-          reportLogs: true,
-          outputPath: `${outDir}/test-results/junit/xunit-report.xml`,
-        }),
+        // junitReporter({
+        //   reportLogs: true,
+        //   outputPath: `${outDir}/test-results/junit/xunit-report.xml`,
+        // }),
       ],
-      testFramework: {
-        config: {
-          timeout: 4000,
-        },
-      },
-    
-
-
+      // testFramework: {
+      //   config: {
+      //     timeout: 4000,
+      //   },
+      // },
     // reporters: [
     //     // {
     //     //     "name": "dot"
