@@ -6,9 +6,8 @@
   "scripts": {
     "start": "web-dev-server --open demo/ --node-resolve",
     "start:watch": "web-dev-server --open demo/ --node-resolve --watch",
-    "test": "wtr test/**/*.test.js --coverage --node-resolve --playwright --browsers chromium firefox --debug",
-    "test:watch": "web-test-runner test/**/*.test.js --node-resolve --watch",
-    "testo": "wtr --coverage"
+    "test": "wtr test/**/*.test.js --coverage --node-resolve --playwright --browsers chromium firefox webkit --debug",
+    "test:watch": "web-test-runner test/**/*.test.js --node-resolve --watch"
   },
   "author": "",
   "license": "ISC",
